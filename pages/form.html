@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="form page of do the second homework of the HTML and CSS term">
+    <meta name="author" content="admin_Ahmadreza Jafipuor">
+    <meta name="robots" content="nofollow noindex">
+    <meta name="keyword" content="HTML , CSS">
+    <title>Practice 2 of HTML CSS</title>
+    <link type="png/image" rel="icon" href="../image/favicon.png">
+</head>
+<body>
+    <h1>
+        Persnal Information 
+
+    </h1>
+    <form action="../index.html" enctype="multipart/form-data" method="post" dir="ltr">
+    <fieldset>
+        <legend>
+            <h2 style="color: red;font-size: larger;">Personal Details</h2>
+        </legend>
+            <label for="fname">
+                Name :
+            </label>
+            <br>
+            <input type="text" name="fname" id="fname" style="width: 350px;height: 30px;padding-left:10px;" placeholder="Enter name here ">
+            <br><br>
+            <label for="adddress">
+                Address :
+            </label><br>
+            <input type="text" name="adddress" id="adddress" style="width: 350px;height: 30px;padding-left:10px;" placeholder="Enter adddress here ">
+            <br><br>
+            <label for="email">
+                Email :
+            </label><br>
+            <input type="email" name="email" id="email" style="width: 350px;height: 30px;padding-left:10px;" placeholder="Enter Email here ">
+            <br><br>
+            <label for="phone">
+                Phone Number :
+            </label><br>
+            <input type="number" name="phone" id="phone" style="width: 350px;height: 30px;padding-left:10px;" placeholder="Enter 10 digits here ">
+            <br><br>
+            <label for="gen" >
+                Gender :
+            </label><br>
+            <input type="radio" name="gen" id="gen1" style="margin-top: 30px;">Male<br>
+            <input type="radio" name="gen" id="gen2" style="margin-bottom: 30px;">Female
+            <br><br>
+            <label for="date">
+                Date of Birth :
+            </label><br>
+            <input type="date" name="date" id="date" style="width: 350px;height: 30px;padding-left:10px;">
+            <br><br>
+        </form>
+    </fieldset>
+    <fieldset style="padding: 0px;">
+            <h3 style="padding-left: 20px;">Languages and Freamworks known </h3>
+            <input type="checkbox" name="ch" id="ch1" style="margin-top: 30px;">JavaScript<br>
+            <input style="padding-left: 20px;" type="checkbox" name="ch" id="ch2">React<br>
+            <input style="padding-left: 20px;" type="checkbox" name="ch" id="ch3">C#<br>
+            <input style="padding-left: 20px;" type="checkbox" name="ch" id="ch4" checked>C++<br>
+            <input style="padding-left: 20px;" type="checkbox" name="ch" id="ch5" checked>PYTHON<br>
+            <input style="padding-left: 20px;" type="checkbox" name="ch" id="ch6" checked>Django<br>
+            <br><br>
+            <div style="width: 100%;padding: 0;">
+                <hr style="height:2px;background-color: black;">
+            </div>
+            <label for="sel1" style="padding-left: 20px;">
+                Education Level Comoleted :
+            </label>
+            <select name="sel1" id="sel1" style="width: 100px;height:30px;margin-left: 50px;padding-left: 20px;">
+                <option value="0" selected>university</option>
+                <option value="1">senior</option>
+                <option value="2">junior</option>
+                <option value="3">expert</option>
+            </select><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>
+            <h2 style="color: red;font-size: larger;">Message Section</h2>
+        </legend>
+        <form action="../index.html" enctype="multipart/form-data" method="post">
+            <label for="message">
+                Message 
+            </label><br>
+            <textarea name="message" id="message" cols="60" rows="6" style="margin-top: 30px;" placeholder="Enter Text Here"></textarea>
+            <br><br>
+            <label for="file">
+                Upload File :
+            </label><br>
+            <input type="file" name="file" id="file" style="margin-top: 40px;padding-bottom: 80px;" multiple accept="image/* , audio/* , video/*">
+            <br>
+            <input type="submit" value="Send Message" style="width: 300px;height:60px;color:white;background-color: black;border: none;margin: 0 auto;display:block;">
+    </fieldset>
+</form>
+</body>
+</html>
